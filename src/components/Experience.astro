@@ -1,0 +1,43 @@
+---
+import ExperienceItem from "./ExperienceItem.astro";
+const EXPERIENCE = [
+  {
+    date: "Diciembre 2025",
+    title: "Consultor de Inteligencia Territorial y Datos",
+    company: "TERRASAT",
+    description:
+      "Automatización de actualización catastral para más de 4,600 predios mediante scripts de Python (PyQGIS). Desarrollo de algoritmos de validación topológica logrando una reducción del 40% en tiempos de revisión manual.",
+  },
+  {
+    date: "Marzo 2025 - Agosto 2025",
+    title: "Subgerente de Data Science y Evaluación",
+    company: "FONATUR",
+    description:
+      "Liderazgo en analítica para proyectos de inversión. Automatización de procesos ETL con Python y SQL, reduciendo en un 75% el tiempo de generación de reportes regulatorios. Desarrollo de tableros en Tableau y Power BI.",
+  },
+  {
+    date: "Julio 2024 - Febrero 2025",
+    title: "Analista de Datos Económicos y Financieros (Jefe de Área)",
+    company: "FONATUR",
+    description:
+      "Diseño de arquitectura de bases de datos para análisis de rentabilidad territorial. Implementación de modelos de Machine Learning (regresión y clustering) para segmentación económica.",
+  },
+  {
+    date: "Julio 2023 - Junio 2024",
+    title: "Analista Jr",
+    company: "FONATUR",
+    description:
+      "Automatización de documentos oficiales con códigos QR (reducción del 75% en tiempo). Análisis geoespacial en Power BI para optimizar la evaluación territorial.",
+  },
+];
+---
+
+<ol class="relative mt-16">
+  {
+    EXPERIENCE.map((experience) => (
+      <li class="">
+        <ExperienceItem {...experience} />
+      </li>
+    ))
+  }
+</ol>

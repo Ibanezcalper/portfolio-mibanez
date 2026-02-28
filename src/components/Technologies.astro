@@ -1,0 +1,99 @@
+---
+import PowerBIIcon from "./icons/PowerBI.astro";
+import PythonIcon from "./icons/Python.astro";
+import SQLIcon from "./icons/SQL.astro";
+import OracleIcon from "./icons/Oracle.astro";
+import TableauIcon from "./icons/Tableau.astro";
+import MachineLearningIcon from "./icons/MachineLearning.astro";
+
+const TECHNOLOGIES = [
+    {
+        name: "Power BI",
+        icon: PowerBIIcon,
+    },
+    {
+        name: "Python",
+        icon: PythonIcon,
+    },
+    {
+        name: "SQL",
+        icon: SQLIcon,
+    },
+    {
+        name: "Oracle Cloud (OCI)",
+        icon: OracleIcon,
+    },
+    {
+        name: "Tableau",
+        icon: TableauIcon,
+    },
+    {
+        name: "Machine Learning",
+        icon: MachineLearningIcon,
+    },
+];
+---
+
+<div class="relative flex overflow-x-hidden group">
+    <div class="py-12 animate-marquee whitespace-nowrap flex gap-10">
+        {
+            TECHNOLOGIES.map(({ name, icon: Icon }) => (
+                <div class="flex items-center gap-2 px-6 py-3 bg-white/5 border border-white/10 rounded-2xl backdrop-blur-sm hover:scale-110 transition-transform duration-300">
+                    <Icon class="size-8 text-yellow-200" />
+                    <span class="text-xl font-semibold text-gray-800 dark:text-gray-200">
+                        {name}
+                    </span>
+                </div>
+            ))
+        }
+    </div>
+
+    <div
+        class="absolute top-0 py-12 animate-marquee2 whitespace-nowrap flex gap-10 ml-10"
+    >
+        {
+            TECHNOLOGIES.map(({ name, icon: Icon }) => (
+                <div class="flex items-center gap-2 px-6 py-3 bg-white/5 border border-white/10 rounded-2xl backdrop-blur-sm hover:scale-110 transition-transform duration-300">
+                    <Icon class="size-8 text-yellow-200" />
+                    <span class="text-xl font-semibold text-gray-800 dark:text-gray-200">
+                        {name}
+                    </span>
+                </div>
+            ))
+        }
+    </div>
+</div>
+
+<style>
+    .animate-marquee {
+        animation: marquee 25s linear infinite;
+    }
+
+    .animate-marquee2 {
+        animation: marquee2 25s linear infinite;
+    }
+
+    @keyframes marquee {
+        0% {
+            transform: translateX(0%);
+        }
+        100% {
+            transform: translateX(-100%);
+        }
+    }
+
+    @keyframes marquee2 {
+        0% {
+            transform: translateX(100%);
+        }
+        100% {
+            transform: translateX(0%);
+        }
+    }
+
+    /* Pause animation on hover */
+    .group:hover .animate-marquee,
+    .group:hover .animate-marquee2 {
+        animation-play-state: paused;
+    }
+</style>

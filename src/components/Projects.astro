@@ -1,0 +1,151 @@
+---
+import GitHub from "./icons/GitHub.astro";
+import NextJS from "./icons/NextJS.astro";
+import Tailwind from "./icons/Tailwind.astro";
+import Link from "./icons/Link.astro";
+import LinkButton from "./LinkButton.astro";
+import Python from "./icons/Python.astro";
+
+const TAGS = {
+  NEXT: {
+    name: "Next.js",
+    class: "bg-black text-white",
+    icon: NextJS,
+  },
+  TAILWIND: {
+    name: "Tailwind CSS",
+    class: "bg-[#003159] text-white",
+    icon: Tailwind,
+  },
+  PYTHON: {
+    name: "Python",
+    class: "bg-[#3776AB] text-white",
+    icon: Python,
+  },
+};
+const PROJECTS = [
+  {
+    title: "Automatización de Actualización Catastral",
+    description:
+      "Automatización de la actualización catastral para más de 4,600 predios utilizando scripts de Python (PyQGIS). Desarrollo de algoritmos de validación topológica logrando una reducción del 40% en tiempos de revisión manual.",
+    link: "https://github.com/ibanezcalper",
+    github: "https://github.com/ibanezcalper",
+    image: "/projects/catastro.webp",
+    tags: [TAGS.TAILWIND],
+  },
+  {
+    title: "Sistema de Reportes Regulatorios Automatizados",
+    description:
+      "Modernización de la analítica de datos mediante la automatización de procesos ETL con Python y SQL, reduciendo en un 75% el tiempo de generación de reportes regulatorios para proyectos de inversión de alto impacto.",
+    link: "https://github.com/ibanezcalper",
+    images: [
+      "/projects/map1.webp",
+      "/projects/map2.webp",
+      "/projects/map3.webp",
+    ],
+    tags: [TAGS.NEXT],
+  },
+  {
+    title: "Python Financial Simulator & Automation Engine",
+    description:
+      "Sistema de automatización que integra dinámicamente volúmenes masivos de datos financieros en plantillas de Excel para simulaciones inmobiliarias, optimizando el tiempo de procesamiento y eliminando errores manuales.",
+    github:
+      "https://github.com/Ibanezcalper/financialexcelsimulationswithpython",
+    image: "/projects/python_financial_sim_preview.webp",
+    tags: [TAGS.PYTHON],
+  },
+];
+---
+
+<div class="flex flex-col gap-y-16">
+  {
+    PROJECTS.map(
+      ({ image, images, title, description, tags, link, github }) => (
+        <article class="flex flex-col space-x-0 space-y-8 group md:flex-row md:space-x-8 md:space-y-0 md:items-center">
+          <div class="w-full md:w-1/2">
+            <div class="relative flex flex-col items-center col-span-6 row-span-5 gap-8 transition duration-500 ease-in-out transform shadow-xl overflow-clip rounded-xl sm:rounded-xl md:group-hover:-translate-y-1 md:group-hover:shadow-2xl lg:border lg:border-gray-800 lg:hover:border-gray-700 lg:hover:bg-gray-800/50">
+              {images ? (
+                <div class="relative w-full aspect-video transition duration-500 md:scale-110 md:group-hover:scale-105 overflow-hidden">
+                  {images.map((img, index) => (
+                    <img
+                      alt={title}
+                      class="absolute inset-0 object-cover object-center w-full h-full animate-carousel"
+                      style={`animation-delay: ${index * 3}s;`}
+                      loading="lazy"
+                      src={img}
+                    />
+                  ))}
+                </div>
+              ) : (
+                <img
+                  alt={title}
+                  class="object-cover object-center w-full aspect-video transition duration-500 sm:h-full md:scale-110 md:group-hover:scale-105"
+                  loading="lazy"
+                  src={image}
+                />
+              )}
+            </div>
+          </div>
+
+          <div class="w-full md:w-1/2 md:max-w-lg">
+            <h3 class="text-2xl font-bold text-gray-800 dark:text-gray-100">
+              {title}
+            </h3>
+            <div class="flex flex-wrap mt-2">
+              <ul class="flex flex-row mb-2 gap-x-2">
+                {tags.map((tag) => (
+                  <li>
+                    <span
+                      class={`flex gap-x-2 rounded-full text-xs ${tag.class} py-1 px-2 `}
+                    >
+                      <tag.icon class="size-4" />
+                      {tag.name}
+                    </span>
+                  </li>
+                ))}
+              </ul>
+
+              <div class="mt-2 text-gray-700 dark:text-gray-400">
+                {description}
+              </div>
+              <footer class="flex items-end justify-start mt-4 gap-x-4">
+                {github && (
+                  <LinkButton href={github}>
+                    <GitHub class="size-6" />
+                    Code
+                  </LinkButton>
+                )}
+                {link && (
+                  <LinkButton href={link}>
+                    <Link class="size-4" />
+                    Preview
+                  </LinkButton>
+                )}
+              </footer>
+            </div>
+          </div>
+        </article>
+      ),
+    )
+  }
+</div>
+
+<style>
+  .animate-carousel {
+    opacity: 0;
+    animation: carousel-fade 9s infinite both;
+  }
+
+  @keyframes carousel-fade {
+    0%,
+    33.33% {
+      opacity: 1;
+      z-index: 10;
+    }
+    33.34%,
+    100% {
+      opacity: 0;
+      z-index: 0;
+    }
+  }
+</style>

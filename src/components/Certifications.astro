@@ -1,0 +1,39 @@
+---
+const CERTIFICATIONS = [
+  "Especialización en Data Science e Infraestructura Cloud | Oracle (Alura)",
+  "Formación en SQL con MySQL Server | Oracle Next Education",
+  "Formación en Oracle Cloud Infrastructure (OCI)",
+  "Visualización de datos - Gestión empresarial | Tecnológico de Monterrey",
+  "Data Analysis with Python | IBM / Coursera",
+  "Formación Java Orientado a Objetos | Alura",
+  "Formación Front End | Alura"
+];
+
+const LANGUAGES = [
+  { name: "Inglés", level: "B2" },
+  { name: "Portugués", level: "B2" },
+  { name: "Alemán", level: "B1" }
+];
+---
+
+<div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+  <div>
+    <h3 class="text-xl font-bold mb-4 text-yellow-200/90">Certificaciones</h3>
+    <ul class="list-disc list-inside space-y-2 text-gray-700 dark:text-gray-300">
+      {CERTIFICATIONS.map((cert) => (
+        <li>{cert}</li>
+      ))}
+    </ul>
+  </div>
+
+  <div>
+    <h3 class="text-xl font-bold mb-4 text-yellow-200/90">Idiomas</h3>
+    <div class="flex flex-wrap gap-4">
+      {LANGUAGES.map(({ name, level }) => (
+        <div class="px-4 py-2 bg-white/5 border border-white/10 rounded-xl backdrop-blur-sm">
+          <span class="font-bold text-yellow-400">{name}:</span> {level}
+        </div>
+      ))}
+    </div>
+  </div>
+</div>

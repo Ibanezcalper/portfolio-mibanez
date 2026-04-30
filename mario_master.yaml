@@ -1,0 +1,157 @@
+cv:
+  name: Mario Ignacio Ibañez Castro
+  headline: Ingeniero en Economía | Data Science & Business Intelligence | Cloud Developer Jr
+  location: CDMX, México
+  email: mibanez.data@gmail.com
+  phone: '+52 221 734 4908'
+  social_networks:
+    - network: LinkedIn
+      username: Mario Ibañez
+    - network: GitHub
+      username: ibanezcalper
+  sections:
+    perfil:
+      - Experto en transformar datos complejos en soluciones estratégicas, modernizando la gestión pública y corporativa mediante la automatización de procesos, el análisis avanzado de datos y la implementación de arquitecturas en la nube.
+    fortalezas_via:
+      - "Creatividad: Capacidad de pensar en nuevas soluciones y formas de conceptualizar tareas."
+      - "Curiosidad: Impulso e interés por explorar y descubrir temas fascinantes."
+      - "Liderazgo: Motivar grupos para cumplir metas preservando relaciones."
+      - "Juicio: Pensar con profundidad considerando todos los puntos de vista y evidencia."
+      - "Valentía: Actuar según convicciones ante desafíos o dificultades."
+      - "Perspectiva: Capacidad de proporcionar consejos sabios y dar sentido al entorno."
+      - "Amor por el aprendizaje: Dominio sistemático de nuevas capacidades y conocimientos."
+    experiencia:
+      - company: TERRASAT
+        position: Consultor de Inteligencia Territorial y Datos
+        start_date: 2025-12
+        end_date: 2025-12
+        highlights:
+          - Diseñé y ejecuté la automatización de la actualización catastral procesando más de 4,600 predios mediante scripts de Python (PyQGIS).
+          - Desarrollé algoritmos de validación topológica para la corrección automática de cartografía digital, reduciendo el tiempo de revisión manual en un 70%.
+          - Aseguré la integridad de la base de datos municipal mediante la generación y digitalización de capas vectoriales a partir de ortofotos.
+      - company: FONATUR
+        position: Subgerente de Evaluación
+        start_date: 2025-03
+        end_date: 2025-08
+        highlights:
+          - Lideré la estrategia analítica para el Plan Gran Visión del Turismo 2030, desarrollando modelos en Python para proyecciones financieras y evaluación de riesgos.
+          - Diseñé y automaticé procesos ETL con Python y SQL, reduciendo en un 95% el tiempo de generación de reportes regulatorios y financieros.
+          - Implementé tableros interactivos en Tableau y Power BI para el monitoreo en tiempo real de KPIs y procesos de auditoría (INAI/SECTUR).
+          - Lideré el análisis cuantitativo de capacidades de carga turística para el Programa de Ordenamiento de Playas (ZOFEMAT).
+      - company: FONATUR
+        position: Analista de Datos - Jefe de Área
+        start_date: 2024-07
+        end_date: 2025-02
+        highlights:
+          - Colaboré en la estrategia de datos para el Tren Maya, integrando variables económicas y sociales para identificar detonadores de inversión.
+          - Implementé modelos de Machine Learning (regresión y clustering) para pronosticar ocupación hotelera y plusvalía, optimizando la evaluación de esquemas de inversión.
+          - Lideré el análisis territorial ante emergencias climáticas (Huracán John) procesando datos en Google Earth Engine y QGIS.
+          - Diseñé la arquitectura de datos en SQL para analizar la rentabilidad territorial del CIP Acapulco.
+      - company: FONATUR
+        position: Analista de datos Jr
+        start_date: 2023-07
+        end_date: 2024-06
+        highlights:
+          - Diseñé un sistema automatizado en Python para la generación masiva de documentos oficiales, reduciendo tiempos administrativos en un 75%.
+          - Implementé mecanismos de validación digital (códigos QR) en la documentación para elevar la seguridad jurídica del programa PRAH.
+          - Desarrollé algoritmos de selección en Python para identificar beneficiarios procesando datos de campo (KoboToolbox).
+      - company: Grupo Xcaret
+        position: Analista de Procesos y Calidad
+        start_date: 2022-05
+        end_date: 2022-12
+        highlights:
+          - Sistematicé flujos operativos mediante protocolos y manuales estandarizados para reducir la variabilidad en la experiencia del cliente.
+          - Implementé un modelo de datos Star Schema en Power BI para optimizar la eficiencia de consultas SQL y el análisis de KPIs de calidad.
+          - Establecí procesos de Data Cleansing en las bases de datos de diseño para asegurar la integridad en la toma de decisiones.
+      - company: FND
+        position: Analista Financiero
+        start_date: 2022-01
+        end_date: 2022-04
+        highlights:
+          - Desarrollé un modelo de Regresión Logística en R para automatizar la clasificación de sujetos de crédito y evaluar probabilidades de cumplimiento.
+          - Diseñé flujos ETL que incrementaron la integridad de la información financiera utilizada para modelos de scoring crediticio.
+          - Gestioné la validación y captura de información financiera en el sistema de evaluación bancaria TROYA.
+      - company: Rancho Bovino
+        position: Analista de Operaciones
+        start_date: 2018-01
+        end_date: 2021-12
+        highlights:
+          - Lideré la estrategia comercial y operativa basada en análisis de datos históricos, logrando un incremento del 30% en la rentabilidad.
+          - Implementé sistemas digitales de registro y control de inventarios (Excel/SQL), optimizando la cadena de suministro.
+          - Realicé análisis de costos unitarios y proyecciones de ventas para ajustar la estrategia de precios ante fluctuaciones del mercado.
+    proyectos:
+      - name: SageMaker Churn Prediction
+        summary: "Implementación de un pipeline de Machine Learning (MLOps) para la predicción de fuga de clientes. Tecnologías: Python, Amazon SageMaker, XGBoost, Boto3, AWS S3."
+        highlights:
+          - Diseño y despliegue de pipelines de ML end-to-end en AWS SageMaker.
+          - Implementación del algoritmo XGBoost para clasificación binaria de alta precisión.
+          - Gestión de almacenamiento de datos y artefactos de modelos en AWS S3.
+      - name: Pronósticos PEA y Turismo Polos de Desarrollo
+        summary: "Análisis estadístico y predictivo sobre la Población Económicamente Activa y el sector turístico en México. Tecnologías: Python, SARIMA (Statsmodels), Pandas, Matplotlib, Seaborn."
+        highlights:
+          - Modelado predictivo de series de tiempo utilizando técnicas avanzadas de econometría (SARIMA).
+          - Análisis de grandes volúmenes de datos económicos para identificar estacionalidades y tendencias de largo plazo.
+          - Generación de insights estratégicos para el apoyo en la toma de decisiones gubernamentales y empresariales.
+      - name: Webscrapping Tools
+        summary: "Herramientas de automatización para la extracción masiva de datos de plataformas inmobiliarias dinámicas como Lamudi y AirBNB. Tecnologías: Python, Selenium, Beautiful Soup (BS4), Pandas."
+        highlights:
+          - Desarrollo de scrapers para sitios con contenido cargado dinámicamente mediante JavaScript.
+          - Automatización de procesos de recolección de datos y limpieza de información no estructurada.
+          - Gestión de técnicas avanzadas para evitar el bloqueo de bots (user-agents, waits dinámicos).
+      - name: QGIS Python Scripts (PyQGIS)
+        summary: "Automatización de procesos dentro de Sistemas de Información Geográfica (SIG) para optimizar flujos de trabajo cartográficos. Tecnologías: Python (PyQGIS), GDAL/OGR, GeoPandas."
+        highlights:
+          - Automatización de análisis geoespacial masivo procesando formatos vectoriales como Shapefiles y GeoJSON.
+          - Manipulación y reparación de geometrías y atributos en grandes conjuntos de datos espaciales.
+          - Integración de scripts personalizados para modernización y actualización catastral.
+      - name: Utilidades de Productividad IA
+        summary: "Repositorio de scripts para automatización administrativa y personal mediante modelos de IA. Tecnologías: Python, OpenAI Whisper, PyPDF2, OS Module."
+        highlights:
+          - Implementación de modelos de procesamiento de lenguaje natural (NLP) como OpenAI Whisper para transcripción de audio.
+          - Creación de herramientas para la manipulación masiva de archivos PDF y automatización de oficina.
+      - name: Lab-AWS-Servicios-IA
+        summary: "Laboratorio de experimentación con servicios cognitivos pre-entrenados de AWS para reconocimiento de imágenes y síntesis de voz. Tecnologías: AWS SDK (Boto3), Python, AWS Rekognition, AWS Transcribe, AWS Polly."
+        highlights:
+          - Integración de APIs de servicios cognitivos de AWS en aplicaciones de software mediante Boto3.
+          - Desarrollo de soluciones de visión computacional y procesamiento de voz en la nube.
+    educación:
+      - institution: Generation México / AWS re/Start
+        area: Cloud Computing & Artificial Intelligence
+        degree: Bootcamp
+        start_date: 2026-02
+        end_date: 2026-05
+      - institution: Universidad Nacional Autónoma de México
+        area: Administración de Organizaciones
+        degree: MS
+        start_date: 2024-08
+        end_date: 2026-06
+      - institution: Universidad Autónoma Chapingo
+        area: Economía
+        degree: Ing
+        start_date: 2018-08
+        end_date: 2022-06
+    habilidades:
+      - label: Análisis de Datos y Programación
+        details: Python (Pandas, NumPy, Scikit-learn, PyGIS), SQL (MySQL), DAX, R (Intermedio), SARIMA.
+      - label: Cloud & DevOps
+        details: AWS (SageMaker, S3, EC2, VPC, IAM, RDS, Rekognition, Transcribe), Linux (CLI), Git, GitHub, OCI.
+      - label: Visualización y BI
+        details: Power BI (Star Schema), Tableau, QGIS, ArcGIS, Matplotlib, Seaborn.
+      - label: Estrategia y Gestión
+        details: Planeación Estratégica, Optimización de Procesos, KPIs/OKRs, Data Storytelling, Gestión de Proyectos (PCM).
+      - label: Idiomas
+        details: Inglés B2, Portugués B2, Alemán B1
+    certificaciones:
+      - bullet: Especialización en Data Science e Infraestructura Cloud | Oracle Next Education (Alura) | 2023
+      - bullet: Formación en SQL con MySQL Server | Oracle Next Education (Alura) | 2023
+      - bullet: Formación en Oracle Cloud Infrastructure (OCI) | Oracle Next Education (Alura) | 2023
+      - bullet: Formación en Python para Data Science | Oracle Next Education (Alura) | 2023
+      - bullet: Formación Java Orientado a Objetos (110h) | Alura | 2023
+      - bullet: Formación Front End (109h) | Alura | 2023
+      - bullet: Visualización de datos - Gestión empresarial | Tecnológico de Monterrey | 2025
+    cursos_adicionales:
+      - bullet: Data Analysis with Python | IBM / Coursera
+      - bullet: "Bioeconomía: Potencial y retos | CEPAL"
+      - bullet: Diplomado en Educación Financiera | CONDUSEF
+      - bullet: Teoría de Juegos y Organización Industrial
+      - bullet: "Innovación y Gestión: Hábitos, Foco y LinkedIn (22h) | Alura"
